@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/dashboard">
-                        <x-jet-application-mark class="block h-9 w-auto" />
+                        <img class="block h-12 w-auto" src="{{ asset('img/delivery-truck.svg') }}" alt="Logo">
                     </a>
                 </div>
 
@@ -14,6 +14,16 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="/dashboard" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="/myorders" :active="request()->routeIs('myOrders')">
+                        {{ __('My Orders') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="/quotes" :active="request()->routeIs('quotes.index')">
+                        {{ __('Request Quote') }}
                     </x-jet-nav-link>
                 </div>
             </div>
