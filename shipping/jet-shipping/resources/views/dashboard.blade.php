@@ -11,6 +11,68 @@
               <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
                 <div class="row">
                   Welcome {{ Auth::user()->name }}
+                  <section>
+                    <form class="" action="index.html" method="post">
+                      <input type="text" name="" value="">
+                      <button type="button" name="button"></button>
+                    </form>
+                  </section>
+                  <section>
+                    <table id="dtPendingTable" class="table ml-5 table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                          <th class="th-sm">#
+                          </th>
+                          <th class="th-sm">Consignment
+                          </th>
+                          <th class="th-sm">Origin
+                          </th>
+                          <th class="th-sm">Destination
+                          </th>
+                          <th class="th-sm">Weight
+                          </th>
+                          <th class="th-sm">Price
+                          </th>
+                          <th class="th-sm">Travel Distance
+                          </th>
+                          <th class="th-sm">Actions
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td> <button type="button" class="btn btn-success" name="button" data-toggle="modal" data-target="">Pay</button> </td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th>#
+                          </th>
+                          <th>Consignment
+                          </th>
+                          <th>Origin
+                          </th>
+                          <th>Destination
+                          </th>
+                          <th>Weight
+                          </th>
+                          <th>Price
+                          </th>
+                          <th>Travel Distance
+                          </th>
+                          <th>Actions
+                          </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </section>
                 </div>
               </div>
             </div>
